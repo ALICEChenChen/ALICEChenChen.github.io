@@ -1,0 +1,49 @@
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts */
+body {
+  font-family: Roboto, Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC', 'Microsoft YaHei',
+    'WenQuanYi Micro Hei', sans-serif;
+}
+
+code {
+  font-family: 'DM Mono', monospace;
+}
+
+@font-face {
+  font-family: Han;
+  font-style: italic;
+  src: local('PingFang SC'), local('Hiragino Sans GB'), local('Heiti SC'), local('Microsoft YaHei'),
+    local('WenQuanYi Micro Hei');
+}
+
+/* create-next-app defaults */
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Background dark mode */
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    color: white;
+    background: black;
+  }
+}
