@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import { Link } from '@chakra-ui/react'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 import Section, { SectionUnindented } from '../components/section'
 import Highlight from '../components/highlight'
@@ -15,7 +17,11 @@ export default function Home() {
         <div className="flex flex-col items-center pt-14 gap-2">
           <p className="text-3xl">Chen Chang</p>
           <p>
-            Email: <a href="mailto:c.zhang@my.cityu.edu.hk">c.zhang@my.cityu.edu.hk</a>
+            Email:{' '}
+            <Link href="mailto:c.zhang@my.cityu.edu.hk">
+              c.zhang@my.cityu.edu.hk
+              <ExternalLinkIcon mx={1} />
+            </Link>
           </p>
         </div>
 
